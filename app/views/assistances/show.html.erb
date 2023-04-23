@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @assistance %>
+
+<div>
+  <%= link_to "Edit this assistance", edit_assistance_path(@assistance) %> |
+  <%= link_to "Back to assistances", assistances_path %>
+
+  <%= button_to "Destroy this assistance", @assistance, method: :delete %>
+</div>
