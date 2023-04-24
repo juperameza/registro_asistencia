@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @asistencium %>
+
+<div>
+  <%= link_to "Edit this asistencium", edit_asistencium_path(@asistencium) %> |
+  <%= link_to "Back to asistencia", asistencia_path %>
+
+  <%= button_to "Destroy this asistencium", @asistencium, method: :delete %>
+</div>

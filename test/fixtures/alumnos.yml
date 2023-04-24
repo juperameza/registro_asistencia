@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_cuenta: 1
+  nombre: MyString
+  apellido_paterno: MyString
+  apellido_materno: MyString
+  grado: 1
+  grupo: MyString
+
+two:
+  numero_cuenta: 1
+  nombre: MyString
+  apellido_paterno: MyString
+  apellido_materno: MyString
+  grado: 1
+  grupo: MyString

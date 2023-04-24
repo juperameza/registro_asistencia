@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Asistencia</h1>
+
+<div id="asistencia">
+  <% @asistencia.each do |asistencium| %>
+    <%= render asistencium %>
+    <p>
+      <%= link_to "Show this asistencium", asistencium %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New asistencium", new_asistencium_path %>

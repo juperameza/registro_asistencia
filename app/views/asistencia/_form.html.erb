@@ -1,0 +1,27 @@
+<%= form_with(model: asistencium) do |form| %>
+  <% if asistencium.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(asistencium.errors.count, "error") %> prohibited this asistencium from being saved:</h2>
+
+      <ul>
+        <% asistencium.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :alumno_id, style: "display: block" %>
+    <%= form.text_field :alumno_id %>
+  </div>
+
+  <div>
+    <%= form.label :asistencia, style: "display: block" %>
+    <%= form.number_field :asistencia %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
